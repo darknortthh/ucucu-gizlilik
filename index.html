@@ -30,13 +30,13 @@
 <article id="tr">
 <h1>Uçucu — Gizlilik Politikası</h1>
 <p class="date">Son güncelleme: 29 Ekim 2026</p>
-<p>Uçucu, uçucu ekibin kendi planını düzenli tutması ve istediği yakınlarıyla paylaşması için yapılmış bir uygulamadır. Hesap açmazsın; adını, e-postanı ya da telefon numaranı istemeyiz. Reklam, analiz ya da izleme aracı yoktur; hiçbir veri satılmaz ya da üçüncü taraflarla pazarlama için paylaşılmaz.</p>
+<p>Uçucu, uçucu ekibin kendi planını düzenli tutması ve istediği yakınlarıyla paylaşması için yapılmış bir uygulamadır. Hesap açmazsın; adını, e-postanı ya da telefon numaranı istemeyiz. Reklam yoktur, seni uygulamalar ya da siteler arasında izlemeyiz; hiçbir veri satılmaz ya da üçüncü taraflarla pazarlama için paylaşılmaz.</p>
 
 <h2>Telefonunda kalanlar</h2>
 <p>Yüklediğin plan dosyaları (PDF), bunlardan çıkan görev listesi, uçuş defterin, ayarların ve uygulamanın hesapladığı her şey yalnız telefonunda saklanır, bize gönderilmez. Telefonunun iCloud yedeği açıksa bu veriler Apple'ın cihaz yedeğine de girer; o yedek Apple ile senin aranda kalır, bize ulaşmaz.</p>
 <ul>
 <li><b>Kamera:</b> yalnız yakın eşleştirme kodunu okutmak için. Görüntü telefonda işlenir, kaydedilmez.</li>
-<li><b>Fotoğraflar:</b> seçtiğin ekran görüntüsündeki yazı telefonda okunur; görüntü kaydedilmez, hiçbir yere gönderilmez.</li>
+<li><b>Fotoğraflar:</b> seçtiğin ekran görüntüsündeki yazı telefonda, Google'ın ML Kit aracıyla okunur; görüntü ve içindeki yazı kaydedilmez, hiçbir yere gönderilmez.</li>
 <li><b>Takvim:</b> planın, uygulamanın kendi oluşturduğu "Uçucu" takvimine yazılır; diğer takvimlerine dokunulmaz.</li>
 <li><b>Yedek dosyası:</b> "Yedek al" ile oluşturduğun dosya, kaydettiğin yerde kalır. Dosya şifresizdir; kimseyle paylaşmadığın yerde sakla.</li>
 </ul>
@@ -54,6 +54,7 @@
 <ul>
 <li><b>Supabase</b> (sunucu, Frankfurt, Avrupa Birliği): paylaşımın şifreli içeriği ve canlı takip kayıtları.</li>
 <li><b>Flightradar24:</b> yalnız uçuş numarası ve tarih (uçuş durumu sorgusu).</li>
+<li><b>Google (ML Kit):</b> ekran görüntüsünden yazı okuma özelliği. Görüntü ve yazı telefondan çıkmaz; ML Kit, Google'a yalnız özelliğin çalışmasıyla ilgili teknik veriler gönderir (cihaz modeli, iOS ve uygulama sürümü, kuruluma özel bir kimlik, hız ve hata bilgileri). Google bunları hata ayıklama ve aracı iyileştirmek için kullanır.</li>
 <li><b>Apple'ın bildirim servisi:</b> yakının telefonuna rötar bildirimi ve kilit ekranı kartı göndermek için bildirim belirteci.</li>
 </ul>
 <p>Bunların dışında hiçbir hizmetle veri paylaşılmaz.</p>
@@ -71,10 +72,10 @@
 <article id="en" lang="en">
 <h1>Uçucu — Privacy Policy</h1>
 <p class="date">Last updated: 29 October 2026</p>
-<p>No account, no name or e-mail, no ads, no analytics or tracking SDKs; no data is sold. Roster files, the parsed schedule, logbook and settings stay on the device. Camera (pairing code) and photo (on-device text recognition) access are processed on the device and never stored or sent.</p>
+<p>No account, no name or e-mail, no ads, no cross-app tracking; no data is sold. Roster files, the parsed schedule, logbook and settings stay on the device. Camera (pairing code) and photo (on-device text recognition with Google ML Kit) access are processed on the device; images and recognized text are never stored or sent.</p>
 <p>Optional sharing with a relative is end-to-end encrypted; the server (Supabase, Frankfurt, EU) only sees ciphertext and random IDs. Optional live flight tracking sends flight legs (flight number, airports, planned times) under a random ID — never names, crew or hotel — and the server queries Flightradar24 by flight number and date only.</p>
 <p>The follower's push notification token is stored to deliver delay alerts; only a one-way hash of the IP address is kept for two hours for rate limiting. Legs are deleted 24 h after arrival, flight status after 7 days, unused IDs and followers after 90 days; turning live tracking off removes them immediately. Deleting the app removes all on-device data.</p>
-<p>Data goes only to these services, only for the purposes above: Supabase (server, Frankfurt, EU), Flightradar24 (flight number and date only) and Apple Push Notification service (push token). No data is shared with any other service.</p>
+<p>Data goes only to these services, only for the purposes above: Supabase (server, Frankfurt, EU), Flightradar24 (flight number and date only), Google ML Kit (technical diagnostics only: device model, OS and app version, a per-installation ID, latency and error codes, used by Google for debugging and improving the tool) and Apple Push Notification service (push token). No data is shared with any other service.</p>
 <p>Contact: <a href="mailto:ucucusupport@gmail.com">ucucusupport@gmail.com</a></p>
 </article>
 </main>
