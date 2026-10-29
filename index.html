@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uçucu — Gizlilik Politikası</title>
+<style>
+  :root { --bg:#F2F5F7; --card:#FFFFFF; --ink:#16303B; --mut:#5E7480; --acc:#0F7B8A; --line:#E3E9EC; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0B1220; --card:#111A2C; --ink:#E6EDF7; --mut:#8FA3C0; --acc:#FFB454; --line:#1E2A40; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  article { background:var(--card); border-radius:20px; padding: 24px 22px; margin-bottom: 20px; }
+  h1 { font-family: "New York","Iowan Old Style",Georgia,serif; font-size: 28px; line-height:1.25; margin: 0 0 4px; }
+  h2 { font-size: 13px; letter-spacing:.06em; text-transform:uppercase; color:var(--mut); margin: 28px 0 8px; }
+  .date { color:var(--mut); margin: 0 0 12px; font-size: 14px; }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 20px; margin: 0 0 10px; }
+  a { color:var(--acc); }
+  nav { margin: 0 0 16px; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#tr">Türkçe</a> · <a href="#en">English</a></nav>
+
+<article id="tr">
+<h1>Uçucu — Gizlilik Politikası</h1>
+<p class="date">Son güncelleme: 29 Ekim 2026</p>
+<p>Uçucu, uçucu ekibin kendi planını düzenli tutması ve istediği yakınlarıyla paylaşması için yapılmış bir uygulamadır. Hesap açmazsın; adını, e-postanı ya da telefon numaranı istemeyiz. Reklam, analiz ya da izleme aracı yoktur; hiçbir veri satılmaz ya da üçüncü taraflarla pazarlama için paylaşılmaz.</p>
+
+<h2>Telefonunda kalanlar</h2>
+<p>Yüklediğin plan dosyaları (PDF), bunlardan çıkan görev listesi, uçuş defterin, ayarların ve uygulamanın hesapladığı her şey yalnız telefonunda saklanır, bize gönderilmez. Telefonunun iCloud yedeği açıksa bu veriler Apple'ın cihaz yedeğine de girer; o yedek Apple ile senin aranda kalır, bize ulaşmaz.</p>
+<ul>
+<li><b>Kamera:</b> yalnız yakın eşleştirme kodunu okutmak için. Görüntü telefonda işlenir, kaydedilmez.</li>
+<li><b>Fotoğraflar:</b> seçtiğin ekran görüntüsündeki yazı telefonda okunur; görüntü kaydedilmez, hiçbir yere gönderilmez.</li>
+<li><b>Takvim:</b> planın, uygulamanın kendi oluşturduğu "Uçucu" takvimine yazılır; diğer takvimlerine dokunulmaz.</li>
+<li><b>Yedek dosyası:</b> "Yedek al" ile oluşturduğun dosya, kaydettiğin yerde kalır. Dosya şifresizdir; kimseyle paylaşmadığın yerde sakla.</li>
+</ul>
+
+<h2>Yakınınla paylaşım (isteğe bağlı)</h2>
+<p>Bir yakınını eklersen, planının onun göreceği kısmı telefonunda şifrelenir ve sunucumuz üzerinden onun telefonuna gider. Sunucu yalnız şifreli içeriği ve rastgele kimlikleri görür; içeriği açacak anahtar yalnız iki telefonda bulunur. Davetler en çok 24 saat geçerlidir. "Paylaşımı kes" dediğinde sunucudaki kayıt silinir.</p>
+
+<h2>Canlı uçuş takibi (isteğe bağlı)</h2>
+<p>Canlı takip açıkken planındaki uçuş bacakları (uçuş numarası, kalkış ve varış meydanı, planlı saatler) rastgele bir kimlikle sunucumuza gönderilir. Adın, sicilin, ekibin, otelin ve eve varış süren gönderilmez. Sunucu bu uçuşların durumunu (kalkış, iniş, rötar) Flightradar24'ten yalnız uçuş numarası ve tarihle sorar.</p>
+<p>Takip eden yakının telefonu, rötar bildirimi ve kilit ekranı kartı alabilmek için Apple'ın bildirim belirtecini sunucuya kaydeder. Kötüye kullanımı sınırlamak için bağlantının IP adresi değil, yalnız geri çevrilemez özeti iki saat tutulur.</p>
+<p>Saklama süreleri: uçuş bacakları inişten 24 saat sonra, uçuş durumları 7 gün sonra silinir; 90 gün kullanılmayan kimlik ve takip kayıtları da silinir. Canlı takibi kapattığında kimliğin ve bacakların sunucudan kaldırılır.</p>
+
+<h2>Sunucu</h2>
+<p>Paylaşım ve canlı takip için Supabase'in Frankfurt'taki (Avrupa Birliği) sunucuları kullanılır.</p>
+
+<h2>Verilerini silmek</h2>
+<p>Uygulamayı silmek, telefonundaki bütün verileri siler. Sunucudaki kayıtlar paylaşımı kestiğinde ya da canlı takibi kapattığında kaldırılır; kapatmadan silersen yukarıdaki süreler dolunca kendiliğinden silinir.</p>
+
+<h2>Çocuklar</h2>
+<p>Uygulama çocuklara yönelik değildir.</p>
+
+<h2>Değişiklikler ve iletişim</h2>
+<p>Bu politika değişirse bu sayfa güncellenir. Sorular için: <a href="mailto:ucucusupport@gmail.com">ucucusupport@gmail.com</a></p>
+</article>
+
+<article id="en" lang="en">
+<h1>Uçucu — Privacy Policy</h1>
+<p class="date">Last updated: 29 October 2026</p>
+<p>No account, no name or e-mail, no ads, no analytics or tracking SDKs; no data is sold. Roster files, the parsed schedule, logbook and settings stay on the device. Camera (pairing code) and photo (on-device text recognition) access are processed on the device and never stored or sent.</p>
+<p>Optional sharing with a relative is end-to-end encrypted; the server (Supabase, Frankfurt, EU) only sees ciphertext and random IDs. Optional live flight tracking sends flight legs (flight number, airports, planned times) under a random ID — never names, crew or hotel — and the server queries Flightradar24 by flight number and date only.</p>
+<p>The follower's push notification token is stored to deliver delay alerts; only a one-way hash of the IP address is kept for two hours for rate limiting. Legs are deleted 24 h after arrival, flight status after 7 days, unused IDs and followers after 90 days; turning live tracking off removes them immediately. Deleting the app removes all on-device data.</p>
+<p>Contact: <a href="mailto:ucucusupport@gmail.com">ucucusupport@gmail.com</a></p>
+</article>
+</main>
+</body>
+</html>
